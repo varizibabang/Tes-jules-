@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "TES",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./src/css/style.css -o ./src/dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varizibabang/Tes-jules-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/varizibabang/Tes-jules-/issues"
+  },
+  "homepage": "https://github.com/varizibabang/Tes-jules-#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.14"
+  }
+}
