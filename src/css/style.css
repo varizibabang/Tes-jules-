@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3e8d8; /* A cozy beige color */
+}
+
+#app {
+    max-width: 1200px;
+}
+
+/* Add some animations */
+.plant, .potion, .seed {
+    transition: transform 0.2s ease-in-out;
+}
+
+.plant:hover, .potion:hover, .seed:hover {
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: .9;
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes jiggle {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+}
+
+.jiggle-animation {
+    animation: jiggle 0.5s;
+}
